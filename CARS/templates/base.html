@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car API</title>
+</head>
+<body>
+
+    <nav>
+
+    <a href="{{ url_for('site.about_us') }}">About Us</a>
+    <a href="{{ url_for('auth.findcar') }}">Find Your Car</a>
+    <a href="{{ url_for('site.profile') }}"> Profile </a>
+    <a href="{{ url_for('auth.signup') }}">Sign Up</a>
+    <a href="{{ url_for('auth.signin') }}"> Sign In </a>
+
+        
+    </nav> 
+    {% block content %}
+    {% endblock content %}   
+    
+</body>
+</html> 
